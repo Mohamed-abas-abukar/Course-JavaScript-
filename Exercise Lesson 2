@@ -1,1 +1,73 @@
 
+
+// exercise 2 a
+
+console.log(10+8*3+5)
+
+// exercise 2 b
+
+console.log((10+8*3+5 )/3)
+
+// exercise 2 c
+
+console.log(18.50 + 7.50 * 2 ) 
+
+// exercise 2 d
+
+console.log(((1850 + 750 * 2 ) / 100 ) * 0.1)
+
+// exercise 2 e
+
+console.log(((1850 +750 *2 )/100)* 0.2)
+
+console.log('_____________________________')
+
+console.log('Setup')
+
+// exercise f
+
+console.log((1899 + 799 + 2095 ) /100)
+
+// exercise g
+
+console.log((1899 + 799 + 2095 +499) /100)
+
+// exercise h
+
+console.log(Math.round((1899+799+2095+499)*0.1) /100)
+    
+    
+// exercise i
+
+ console.log((2095 +799 +1899 +499 )/100  + Math.round((1899+799+2095+499)*0.1) /100)
+
+
+
+// exercise j numbar down
+
+console.log(Math.floor(5.9))
+
+// exercise k number up
+
+console.log(Math.ceil(5.9))
+
+/* Challange Exercise */ 
+
+// Exercise 2L 
+
+let c = 25 ;
+
+console.log(c * 9 / 5 +32) ;
+
+// Exercise 2m
+
+let f = 86 ;
+
+console.log((86 -32) * 5 /9 )
+
+// Exercise 2n
+
+let con = -5 ;
+
+console.log(con * 9 / 5 +32)
+
