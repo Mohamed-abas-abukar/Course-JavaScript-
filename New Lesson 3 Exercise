@@ -1,0 +1,56 @@
+
+//Lesson 3 Exercise Strins
+
+// 3 a create the text my name is ass string
+console.log('mmy namme is :')
+
+// 3 b create your name as string for example ( mohamed ) 
+console.log(' Mohamed Abas')
+
+// 3 c using concatination
+console.log('My namme is :' + ' Mohamed Abas ')
+
+// 3 d using math calculate total cost and use concatination create the text the total cost is :  
+console.log('Total cost is : ' + '$'+ (5+3)) ;
+
+
+// 3 e using template strings and interpolation 
+console.log(`Total cost is: $${5+3}`) ;
+
+// 3 f
+alert('Total cost is : ' + '$'+ (5+3)) ;
+
+// 3 g
+console.log('Total cost is : ' + '$' +(599 + 295)/100 ) ;
+
+// 3 h
+console.log(`Total cost is :   $${(599 + 295) /100}` ) ;
+
+// 3 i
+alert(`Total cost is :   $${(599 + 295) /100}` ) ;
+
+// 3 j
+console.log(`Total cost is : $${(599 + 295) /100} 
+  Thank you ` ) ;
+  
+  /* Challange Exercise  */
+
+ // 3 k
+console.log(`Item(${2+2}):$${(2095 +799) *(2)/100}` ) ;
+
+ // 3 l
+console.log(`Shipping & handling : $${(499+499)/100}` ) ;
+
+// 3 m
+console.log(`Total before tax : $${((2095 +799)*(2)/100)+ (499+499)/100}`);
+    
+// 3 n
+console.log(`Estimate tax(10%): $${Math.round((2*2095 + 2*799 +499+499)*0.1)/100}` ) ;
+
+
+ 
+
+
+
+
+
