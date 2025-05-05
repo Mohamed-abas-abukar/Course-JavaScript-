@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Boolean and if statement</title>
+</head>
+<body>
+    
+    
+    <!-- Challange  Exercise-->
+  
+  <!-- 5 k -->
+    <button onclick="
+    
+     if(cartQuantity + 1 > 10){
+         alert('The cart is full');
+     }else{
+           cartQuantity++;
+         console.log(`cartQuantity ${cartQuantity}`);
+     }
+  ">+1</button>
+  
+  <!-- 6i -->
+ 
+    <!-- 5 j-->
+    <button onclick="
+    
+    if(cartQuantity - 2 < 0){
+        alert('Not enoght item in cart');
+    }else{
+        cartQuantity =-2;
+        console.log(`cartQuantity ${cartQuantity}`)
+    }
+    
+    ">-2</button>
+    <!-- 5j  -->
+    <button class="yellow" onclick="
+    
+    if(cartQuantity - 3 < 0){
+        alert('Not enoght item in cart');
+    }else{
+        cartQuantity =-3;
+        console.log(`cartQuantity ${cartQuantity}`)
+    }
+    
+    ">-3</button>
+  <!-- end 6i -->
+</body>
+
+<!-- 6a and 6b -->
+   <script>
+       
+      <!--  5k -->
+      let cartQuantity = 5;
+      
+     
+     let hour = 13; 
+      
+     if(hour >= 6 && hour <= 12){
+        console.log('good morning ');
+    } 
+    
+    else if(hour >=13 && hour <= 17){
+      console.log('good afternoon ');
+    } 
+   else {
+       console.log('good evening')
+   }
+   
+   <!-- 6c  -->
+   
+     let name = 'mohamed';
+     if(hour >= 6 && hour <= 12){
+        console.log(`good morning ${name}`);
+    } 
+    
+    else if(hour >=13 && hour <= 17){
+      console.log(`good afternoon ${name}`);
+    } 
+   else {
+       console.log(`good morning ${name}`);
+   }
+   
+     <!-- 6d  -->
+      let age = 30 ;
+     
+    if(age<= 6 || age>=65){
+    console.log('Discount');
+        
+    }else{
+        console.log('No discount')
+    }
+      
+     <!-- 6e  -->
+     let newAge = 6 ;
+     const isHolyday = true;
+     
+     
+    if((newAge<= 6 || newAge >=65) && isHolyday ){
+    console.log('Discount');
+        
+    }else{
+        console.log('No discount')
+    }
+  
+  <!-- 6f  -->
+  const rondomNumber = Math.random();
+  let result ;
+  let guess = 'head';
+  rondomNumber < 0.5 ?
+      result = 'head'
+     : result = 'tail';
+  
+  console.log(result);
+  console.log(Math.random());
+  
+  guess === result ?
+      console.log('You win')
+  : console.log('You lose')
+  
+  
+  
+   </script>
+   
+</html>
