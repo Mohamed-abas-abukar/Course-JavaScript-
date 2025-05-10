@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Functions</title>
+</head>
+<body>
+    
+</body>
+    <script>
+     <!-- 7a  -->
+     let result ='';
+    function greet(){
+        console.log('hello !');
+    }
+    
+    greet();
+    greet();
+   
+    <!-- end 7a  -->
+    
+    <!-- 7b  -->
+    function greet(name){
+        console.log(`Hello ${name}`);
+    }
+    
+    greet('mohamed');
+    greet('cabas');  
+    
+    <!-- end 7b -->
+    
+    <!-- 7c -->
+    function greet(name){
+        if(!name ){
+        console.log('hi there ')
+        
+    } else {
+        console.log(`Hello ${name}`);
+    }
+    } 
+    
+    greet('xubi ');
+    greet('qaali');  
+    greet()
+    
+    <!-- end 7c -->
+    
+    
+    <!-- 7d -->
+  function converToFarenheit(celcius){
+    result = ((celcius * 9/5 ) +32);
+   console.log(`result ${result}C `)
+     return celcius ;  
+  }
+    
+    converToFarenheit(25);
+   
+   
+    <!-- end 7d  -->
+    
+    
+     <!-- 7e -->
+  function converToCelcius(Farenheit){
+    result = ((Farenheit -32)*5/9);
+    console.log(`result ${result}F`)
+     return Farenheit ;  
+  }
+    
+    converToCelcius(86);
+   
+   
+    <!-- end 7e  -->
+    
+   
+    
+     <!-- 7f-->
+function converToTemperature(degree , unit){
+    result = ((degree -32)*5/9);
+    console.log(`result ${result}F`)
+     return degree ;  
+  }
+    
+    
+   converToTemperature(86, 'f');
+   
+    <!-- end 7f  -->
+    
+      
+    
+      <!--  7g and 7h  -->
+      
+  function convertFeet(feet,from,to){
+  if(from !== 'mile' && from !== 'km' && from !== 'feet'){
+          return `Invalid unit :${from}`
+      }else if(to !== 'mile' && to !== 'km' && to !== 'feet'){
+      return `Invalid unit:${to}`;
+      }
+  
+     if(from === 'mile' && to === 'km'){
+     result = (feet * 1.6);
+       console.log(`${result} km`);
+       
+       
+ }else if (from === 'km' && to === 'mile'){
+         result = (feet / 1.6);
+      
+       console.log(`${result} mile`);
+          
+  }else if (from === 'km' && to === 'km'){
+        result = (feet * 1);
+    console.log(`${result} km`);
+    
+  }else if (from === 'mile' && to === 'km'){
+        result = (feet * 1.6);
+      console.log(`${result} km`);
+      
+      }else if (from === 'mile' && to === 'feet'){
+        result = (feet * 5280);
+          console.log(`${result} feet`);
+          
+      }else if (from === 'km' && to === 'feet'){
+        result = (feet * 3281);
+          console.log(`${result} feet`);
+          
+      }
+      
+      
+      
+      
+     <!-- end 7g and 7h  -->
+  }
+  
+
+   console.log(convertFeet(50, 'mile', 'km'));
+    console.log(convertFeet(32, 'km', 'mile'));
+  console.log(convertFeet(50, 'km', 'km'));
+    
+    <!-- as feet  -->
+   console.log(convertFeet(5, 'mile', 'km'));
+  console.log(convertFeet(5, 'mile', 'feet'));
+  console.log(convertFeet(5, 'km', 'feet'));
+    
+   
+    <!-- 7 j -->
+   <!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <p>
+      <button onclick="
+      updateCalculation('1');
+        
+      ">1</button>
+
+      <button onclick="
+        updateCalculation('2');
+      ">2</button>
+
+      <button onclick="
+        updateCalculation('3');
+      ">3</button>
+
+      <button onclick="
+        updateCalculation('+');;
+      ">+</button>
+    </p>
+
+    <p>
+      <button onclick="
+        updateCalculation('4');
+      ">4</button>
+
+      <button onclick="
+        updateCalculation('5');
+        
+      ">5</button>
+
+      <button onclick="
+        updateCalculation('6');;
+      ">6</button>
+
+      <button onclick="
+        updateCalculation('-');
+      ">-</button>
+    </p>
+
+    <p>
+      <button onclick="
+        updateCalculation('7');
+      ">7</button>
+
+      <button onclick="
+        updateCalculation('8');
+      ">8</button>
+
+      <button onclick="
+        updateCalculation('9');
+      ">9</button>
+
+      <button onclick="
+        updateCalculation('*');
+      ">*</button>
+    </p>
+
+    <p>
+      <button onclick="
+        updateCalculation('0');;
+      ">0</button>
+
+      <button onclick="
+        updateCalculation('.');
+      ">.</button>
+
+      <button onclick="
+        // Note: eval() takes a string and runs it as code.
+        // Avoid using eval() in real world projects since
+        // it can potentially be given harmful code to run.
+        // Only use eval() for learning purposes.
+        
+              
+   calculation = eval(calculation);
+       console.log(calculation);
+      ">=</button>
+
+      <button onclick="
+        updateCalculation('/');
+      ">/</button>
+    </p>
+
+    <p>
+      <button onclick="
+        calculation = '';
+        console.log('Cleared.');
+      ">Clear</button>
+    </p>
+
+    <script>
+        
+        let calculation = '';
+  function updateCalculation(number){
+           
+        if(number === '='){
+      
+           
+            }  
+        calculation += number;    
+        console.log(calculation);
+        
+    
+         
+        }
+      
+    </script>
+  </body>
+</html>
+
+    
+    <!-- end 7 j -->
+
+    <!-- 7 k -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+</head>
+<body>
+    
+     <!-- 6i -->
+ 
+    <!-- 5 j-->
+    <button onclick="
+    updateCartQ(2);
+    
+    ">-2</button>
+    <!-- 5j  -->
+    <button class="yellow" onclick="
+    
+    updateCartQ(3)
+    
+    ">-3</button>
+  <!-- end 6i -->
+    
+    <script>
+        let cartQuantity = 2;
+    function updateCartQ(value){
+            if(cartQuantity - value < 0){
+        alert('Not enoght item in cart');
+    }else{
+        cartQuantity =- value;
+        console.log(`cartQuantity ${cartQuantity}`)
+    }
+    
+        }
+        
+    </script>
+    
+</body>
+</html>
+
+    <!-- end 7 k -->
+
+<!-- 7 L -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+</head>
+<body>
+    
+     <!-- 6i -->
+ 
+    <!-- 5 j-->
+    <button onclick="
+    updateCartQ(2);
+    
+    ">-2</button>
+    <!-- 5j  -->
+    <button class="yellow" onclick="
+    
+    updateCartQ(3)
+    
+    ">-3</button>
+  <!-- end 6i -->
+    
+    <script>
+        let cartQuantity = 2;
+        let result ='';
+    function updateCartQ(value){
+            if(cartQuantity - value < 0){
+        result = ('Not enoght item in cart');
+        alert(result);
+    }else{
+        cartQuantity =- value;
+        console.log(`cartQuantity ${cartQuantity}`)
+    }
+    
+if(result === 'Not enoght item in cart')
+    {
+       alert('The cart is full');
+       
+       
+    }
+       
+   
+        }
+        
+    </script>
+    
+</body>
+</html>
+<!-- end 7 L -->
+  
+
+   </script>
+</html>
