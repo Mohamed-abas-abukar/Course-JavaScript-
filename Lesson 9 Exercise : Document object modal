@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <!-- 9a -->
+    <button>9a</button>
+    <!-- end 9a  -->
+    
+    <!--  9b  -->
+    <button class="js-button">9b</button>
+    <!-- end 9b  -->
+    
+    
+    <!-- 9c -->
+    <button onclick ="
+    pickHead();
+    "
+    class="js-head">heads</button>
+    <button onclick ="
+    pickTail();
+    "class="js-tail">tails</button>
+    
+    <p class="js-result"></p>
+    
+    <!-- end 9c  -->
+    
+    <!-- 9d  -->
+     <!-- <input placeholder =" Enter Your name :" type="">
+    <button onclick ="submitButton(); "
+    
+  class="js-submit">Submit</button>
+    
+    <p class="js-display-p"></p>
+      -->
+      <!-- end 9d  -->
+      <input placeholder =" Enter Your name :" type="" onkeydown= submitButton();>
+  <button class="js-submit" 
+    
+  ">Submit</button>
+    
+    <p class="js-display-p"></p>
+     
+      <!-- end 9d  -->
+      
+    <!-- 9e -->
+    
+     <input placeholder =" Enter Your name :" type="" onkeydown= submitButton();>
+  <button class="js-submit" 
+    
+  ">Submit</button>
+    
+    <p class="js-display-p"></p>
+    <!-- end 9e -->
+    
+    <!-- 9f -->
+    
+    <!-- horay aysa usameyay -->
+    
+    <!-- end 9f -->
+    
+    <!-- 9g -->
+    
+     <input placeholder =" Enter Your name :" class="js-input-g" type="" >
+  <button class="js-submit-g" 
+   onclick= "amazoShopping()";
+  >Submit</button>
+    
+    <p class="js-display-g"></p>
+    <!-- end 9g-->
+    
+    
+    
+</body>
+<script>
+    <!-- 9a -->
+   const button = document.querySelector('button');
+   console.log(button)
+   
+   <!-- end 9a -->
+   
+   <!-- 9b -->
+   const buttonb = document.querySelector('.js-button').innerHTML = '9b done';
+   console.log(buttonb)
+   
+   <!-- end 9b -->
+   
+   <!--  9c -->
+   
+   const head = document.querySelector('.js-head');
+   const tail = document.querySelector('.js-tail');
+   
+  const result = document.querySelector('.js-result');
+  
+  
+  function pickHead(){
+  
+result.innerHTML = `You chose: ${head.innerHTML}`;
+  
+   
+ }
+ function pickTail(){
+  
+result.innerHTML = `You chose: ${tail.innerHTML}`;
+  
+   
+ }
+   <!-- end 9c -->
+   
+  
+  <!--  9d -->
+  
+  function submitButton(){
+let submit = document.querySelector('input').value;
+const result = document.querySelector('.js-display-p').innerHTML = `Your name is : ${submit}`;
+      
+  }
+    
+  <!-- end 9d -->
+  
+   <!--  9e -->
+  
+  function submitButton(){
+let submit = document.querySelector('input').value;
+const result = document.querySelector('.js-display-p').innerHTML = `Your name is : ${submit}`;
+   
+  }  
+    
+  <!-- end 9e -->
+  
+  <!--  9g -->
+  
+ 
+   function amazoShopping() {
+       calculate();
+   }
+   
+   function calculate() {
+   let submitG = document.querySelector('.js-input-g').value;
+ 
+ let cost = Numbrer()
+   
+   
+const resultG = document.querySelector('.js-display-g').innerHTML = `Your name is : ${submitG}`;
+   }
+  <!-- end 9g -->
+   
+  
+   
+   
+   
+</script>
+</html>
