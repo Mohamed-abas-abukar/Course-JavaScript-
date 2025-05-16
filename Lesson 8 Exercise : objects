@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Object </title>
+</head>
+<body>
+      
+      
+</body>
+ <script>
+     <!-- 8 a  -->
+       let object = {
+       basketball  : 'ball',
+       price : 2095 ,
+       'deliver-time' : '3 dayz'
+       };
+    
+      console.log(object);
+          
+       <!-- end 8 a -->
+       
+       <!-- 8 b  -->
+       
+       object.price += 500;
+      console.log(object.price);
+          
+       <!-- end 8 b -->
+       
+        <!--  8 c -->
+        
+        console.log(object['deliver-time'])
+        
+         <!-- end 8 c -->
+        
+         
+     <!--  8 d -->
+        
+        function comparePrice(prodect1,prodect2){
+          
+   if(prodect1.price < prodect2.price)
+      {
+          return prodect1;
+      }else{
+          return prodect2;
+      }
+      
+      };
+          
+        
+        const prodect1 = {
+            name  : 'ball',
+            price : 1095
+             
+        };
+        
+        const prodect2 = {
+            name  : 'socke',
+            price : 2095
+             
+       };
+        
+        console.log(comparePrice(prodect1 , prodect2))
+              
+         <!-- end 8 d -->   
+         
+       <!--  8 e -->
+        
+        function isSameProduct(product1,product2){
+          
+   if(product1.price == product2.price && 
+     product1.name == product2.name )
+      {
+          return true;
+      }else{
+          return false;
+      }
+      
+      };
+          
+        
+        const product1 = {
+            name  : 'sock',
+            price : 1095
+             
+        };
+        
+        const product2 = {
+            name  : 'sock',
+            price : 1095
+             
+       };
+        
+        console.log(isSameProduct(product1 , product2))
+        
+         <!-- end 8 e -->     
+         
+         
+         <!-- 8 f -->   
+         
+         let string = 'Good Morning';
+         
+     console.log(string.toLowerCase())
+         <!-- end 8 f -->
+         
+         
+         <!-- 8 g -->
+         let string2 = 'Test';
+         
+     console.log(string2.repeat(2))
+         
+         <!-- end 8 g -->
+         
+         <!-- 8h -->
+              
+   
+         <!-- end 8h -->
+       
+       
+ </script>
+</html>
